@@ -1,0 +1,87 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Цвета Московского Политеха */
+:root {
+    --mp-red: #E41E26;
+    --mp-dark: #1A1A1A;
+    --mp-light: #F5F5F5;
+}
+
+/* Шапка сайта */
+header {
+    background: var(--mp-dark);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: var(--mp-red);
+}
+
+/* Логотип */
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--mp-red);
+}
+
+/* Основной контент */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    background: var(--mp-red);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #C00;
+}
+
+/* Подвал */
+footer {
+    background: var(--mp-dark);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
