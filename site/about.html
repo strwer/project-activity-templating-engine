@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О проекте | Московский Политех</title>
@@ -9,14 +10,16 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Московский Политех</div>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О проекте</a></li>
-                <li><a href="team.html">Участники</a></li>
-                <li><a href="journal.html">Журнал</a></li>
-                <li><a href="resources.html">Ресурсы</a></li>
-            </ul>
+            <div class="logo-container">
+                <img src="img/logo.png" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="about.html" class="nav-link active">О проекте</a>
+                <a href="team.html" class="nav-link">Участники</a>
+                <a href="journal.html" class="nav-link">Журнал</a>
+                <a href="resources.html" class="nav-link">Ресурсы</a>
+            </div>
         </nav>
     </header>
 
@@ -28,14 +31,21 @@
             <div class="about-grid">
                 <div class="about-card">
                     <h2>Цель</h2>
-                    <p>Создать инновационное решение для автоматизации процессов в образовательной среде.</p>
+                    <p>Разработать простой, но мощный шаблонизатор для генерации документов на основе пользовательских шаблонов и динамических данных. Проект вдохновлен идеями из репозитория build-your-own-x и предназначен для автоматизации рутинных задач в веб-разработке, аналитике и документообороте.</p>
                 </div>
                 <div class="about-card">
-                    <h2>Задачи</h2>
+                    <h2>Ключевые особенности:</h2>
                     <ul>
-                        <li>Анализ существующих решений</li>
-                        <li>Разработка прототипа</li>
-                        <li>Тестирование и внедрение</li>
+                        <li>Поддержка переменных и условий – вставка данных в шаблоны ({{ user.name }}).</li>
+                        <li>Циклы и логика – генерация списков, таблиц.</li>
+                        <li>Простота интеграции – работа с Python, JavaScript или другим выбранным стеком.</li>
+                        <li>Примеры использования – создание HTML-страниц, PDF-отчетов, писем.</li>
+                    </ul>
+                    <h2>Для кого это полезно?</h2>
+                    <ul>
+                        <li>Разработчики, которые хотят глубже понять работу шаблонизаторов.</li>
+                        <li>Команды, автоматизирующие отчетность.</li>
+                        <li>Студенты, изучающие принципы генерации контента.</li>
                     </ul>
                 </div>
             </div>
@@ -45,7 +55,7 @@
     </main>
 
     <footer>
-        <p>© 2024 Московский Политех. Все права защищены.</p>
+        <p>© 2025 Московский Политех. Проектная практика.</p>
     </footer>
 </body>
 </html>

@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><!-- Такой же head --></head>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресурсы | Московский Политех</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .resource-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+        .resource-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .resource-content {
+            padding: 20px;
+        }
+        .resource-type {
+            display: inline-block;
+            background: var(--mp-light);
+            color: var(--mp-dark);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        .resource-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--mp-red);
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-    <header><!-- Та же шапка --></header>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="about.html" class="nav-link">О проекте</a>
+                <a href="team.html" class="nav-link">Участники</a>
+                <a href="journal.html" class="nav-link">Журнал</a>
+                <a href="resources.html" class="nav-link active">Ресурсы</a>
+            </div>
+        </nav>
+    </header>
 
     <main class="container">
         <h1>Полезные ресурсы</h1>
+        <p>Материалы, которые помогли нам в работе над проектом</p>
         
-        <div class="resources-list">
+        <div class="resources-grid">
+            <!-- Ресурс 1 -->
             <div class="resource-card">
-                <h2>Официальный сайт Московского Политеха</h2>
-                <p>Ссылка: <a href="https://mospolytech.ru" target="_blank">mospolytech.ru</a></p>
+                <img src="img/resource1.jpg" alt="Официальный сайт" class="resource-image">
+                <div class="resource-content">
+                    <span class="resource-type">Официальный сайт</span>
+                    <h3>Московский Политех</h3>
+                    <p>Официальный сайт университета с информацией о проектной деятельности.</p>
+                    <a href="https://mospolytech.ru" target="_blank" class="resource-link">Перейти →</a>
+                </div>
             </div>
             
+            <!-- Ресурс 2 -->
             <div class="resource-card">
-                <h2>Методическое пособие по проектной деятельности</h2>
-                <p>Автор: Петров А.А., 2023 г.</p>
-                <a href="#" class="btn">Скачать PDF</a>
+                <img src="img/resource2.jpg" alt="Методическое пособие" class="resource-image">
+                <div class="resource-content">
+                    <span class="resource-type">PDF-документ</span>
+                    <h3>Руководство по проектной деятельности</h3>
+                    <p>Подробное методическое пособие по организации проектной работы в вузе.</p>
+                    <a href="#" class="resource-link">Скачать →</a>
+                </div>
             </div>
             
-            <!-- Добавьте другие ресурсы -->
+            <!-- Ресурс 3 -->
+            <div class="resource-card">
+                <img src="img/resource3.jpg" alt="Партнер проекта" class="resource-image">
+                <div class="resource-content">
+                    <span class="resource-type">Партнер</span>
+                    <h3>Технологическая компания "Инновация"</h3>
+                    <p>Сайт компании-партнера, предоставившей техническую поддержку проекта.</p>
+                    <a href="#" class="resource-link">Посетить сайт →</a>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer><!-- Такой же подвал --></footer>
+    <footer>
+        <p>© 2025 Московский Политех. Проектная практика.</p>
+    </footer>
 </body>
 </html>

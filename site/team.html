@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Такой же head, как в about.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники проекта | Московский Политех</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .member-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        .member-photo {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .member-info {
+            padding: 20px;
+        }
+        .member-role {
+    color: var(--mp-red) !important; /* Красный цвет для роли */
+    font-weight: bold;
+    margin: 10px 0;
+    display: inline-block;
+    background: rgba(112, 71, 71, 0.9);
+    padding: 3px 10px;
+    border-radius: 15px;
+    border: 1px solid var(--mp-red);
+}
+    </style>
 </head>
 <body>
-    <header><!-- Та же шапка --></header>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="about.html" class="nav-link">О проекте</a>
+                <a href="team.html" class="nav-link active">Участники</a>
+                <a href="journal.html" class="nav-link">Журнал</a>
+                <a href="resources.html" class="nav-link">Ресурсы</a>
+            </div>
+        </nav>
+    </header>
 
     <main class="container">
-        <h1>Наша команда</h1>
+        <h1>Моя команда: Один в поле воин, но с поддержкой вселенной!</h1>
+        <p>Несмотря на то, что над проектом я работаю индивидуально, я не чувствую себя одиноким волком.</p>
         
-        <div class="team-grid">
+        <div class="team-container">
+            <!-- Участник -->
             <div class="member-card">
-                <img src="img/team1.jpg" alt="Иван Иванов">
-                <h3>Иван Иванов</h3>
-                <p><strong>Роль:</strong> Team Lead</p>
-                <p><strong>Вклад:</strong> Разработка архитектуры проекта.</p>
+                <img src="img/team.jpg" alt="Станислав Ищук" class="member-photo">
+                <div class="member-info">
+                    <h3>Ищук Станислав</h3>
+                    <div class="member-role">Разработчик шаблонизатора</div>
+                    <p><strong>Разработал ядро шаблонизатора на Python</strong></p>
+                    <p><strong>Написал документацию</strong></p>
+                    <p><strong>Участвовал в тестировании</strong></p>
+                </div>
             </div>
-            
-            <div class="member-card">
-                <img src="img/team2.jpg" alt="Анна Петрова">
-                <h3>Анна Петрова</h3>
-                <p><strong>Роль:</strong> Дизайнер</p>
-                <p><strong>Вклад:</strong> Создание UI/UX-макетов.</p>
-            </div>
-            
-            <!-- Добавьте остальных участников -->
-        </div>
     </main>
 
-    <footer><!-- Такой же подвал --></footer>
+    <footer>
+        <p>© 2025 Московский Политех. Проектная практика.</p>
+    </footer>
 </body>
 </html>
