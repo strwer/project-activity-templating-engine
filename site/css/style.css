@@ -212,7 +212,7 @@ nav {
 /* Навигационное меню */
 .nav-menu {
     display: flex;
-    gap: 1px;
+    gap: 25px;
     background: rgba(255,255,255,0.1);
     border-radius: 12px;
     padding: 5px;
